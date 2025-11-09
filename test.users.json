@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "68c64e5687215573caa1723f"
+  },
+  "indexNumber": "S1001",
+  "name": "Kavindu Perera",
+  "faculty": "Computing",
+  "passwordHash": "$2b$10$JkKfQ4I9RLM70eyjOD95YOfNUSgX.WuiqLJRK/ePDPPMxZuJF5nJW",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5687215573caa17241"
+  },
+  "indexNumber": "S1002",
+  "name": "Nethmi Fernando",
+  "faculty": "Business",
+  "passwordHash": "$2b$10$psyUEVqDL4aNU8DoGI9gEuKErn.uUoygCO3Hcemkzq348l9gnxrHm",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5687215573caa17243"
+  },
+  "indexNumber": "S1003",
+  "name": "Shehan Jayasinghe",
+  "faculty": "Computing",
+  "passwordHash": "$2b$10$5k44c6lf2BQ6ySagKn7d3ef1Qw3Lqq36H5rVDxoBJXTJ/iLliLsL.",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5687215573caa17245"
+  },
+  "indexNumber": "S1004",
+  "name": "Dinithi Weerasinghe",
+  "faculty": "Engineering",
+  "passwordHash": "$2b$10$gRnL47reQtCirGXpppFj9.f6CYSxNwinZTZCl.0OpRtPrBe.0B0gy",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5787215573caa17247"
+  },
+  "indexNumber": "S1005",
+  "name": "Malith Silva",
+  "faculty": "Computing",
+  "passwordHash": "$2b$10$2uS8lGplj4fIwfXsvA1K4eQxIelb.qcvefFX5VeVvSONkcFrDVhVK",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5787215573caa17249"
+  },
+  "indexNumber": "S1006",
+  "name": "Hiruni Dissanayake",
+  "faculty": "Design",
+  "passwordHash": "$2b$10$QPXqpfpY/7fCuAmBjpoam.oAbbQdAA6b8vFVwDpJtvQEcRRpBd1VW",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5787215573caa1724b"
+  },
+  "indexNumber": "S1007",
+  "name": "Supun Abeysekara",
+  "faculty": "Business",
+  "passwordHash": "$2b$10$ybzDyv9ikqmxl.QmiVRmiuNpPoTH0XFYEOE/QKVngCwZPIfG0868S",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5787215573caa1724d"
+  },
+  "indexNumber": "S1008",
+  "name": "Sachini Rajapaksha",
+  "faculty": "Computing",
+  "passwordHash": "$2b$10$xVEPvm5UIIS0oG71GOl0FuKrdzQanVh0v3QCBEBfDjLHKVgzxHQC6",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5787215573caa1724f"
+  },
+  "indexNumber": "S1009",
+  "name": "Pasindu Liyanage",
+  "faculty": "Engineering",
+  "passwordHash": "$2b$10$tqbvYwZQBQEfCVABK1gZaOmbTm7UZ3dAfsidATdXBoEn.M9qmmzKO",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5887215573caa17251"
+  },
+  "indexNumber": "S1010",
+  "name": "Tharushi Gunawardena",
+  "faculty": "Computing",
+  "passwordHash": "$2b$10$x9zSmXrwoAkBlpflJBxxkOpNQ8wURLksE6cEJn4vYE2BVAHhKtTuu",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c64e5887215573caa17253"
+  },
+  "indexNumber": "ADM-0001",
+  "name": "Admin User",
+  "faculty": "Admin",
+  "passwordHash": "$2b$10$2eT/vBvpo6jE.45qQLx8VOPCEWqmKZrLPMkZrOliyxfCze44UnaYW",
+  "role": "admin",
+  "__v": 0
+}]
