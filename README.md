@@ -1,6 +1,6 @@
 # Event-Management-System-NIBM-Campus
 
-This project was developed to solve a real-time problem at NIBM campus — organizing and managing student events more efficiently. It is a full-stack web application built using Node.js, Express, and MongoDB Atlas, featuring secure authentication for both admin and student users. The system streamlines event registration, management, and information sharing, improving overall campus event coordination.
+This project was developed to solve a real-time problem at NIBM campus — organizing and managing student events more efficiently. It is a full-stack web application built using Node.js, Express, and MongoDB Atlas, featuring secure authentication for both admin and student users. The system streamlines event registration, management, and information sharing, improving overall campus event coordination. All the demo user names and passwords are shown on the video in here.
 
 🔹 Key Highlights:
 
