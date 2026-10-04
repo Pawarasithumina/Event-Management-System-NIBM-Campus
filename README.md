@@ -546,7 +546,6 @@ to create a practical solution for a real-world organizational requirement.
 
 ---
 
+## Contributors
 
-contributors: [@dhamith99](https://github.com/dhamith99)
-
----
+- [@dhamith99](https://github.com/dhamith99)
