@@ -1,3 +1,17 @@
+<div align="center">
+
+<img src="assets/event-header.svg" alt="Event Management System - NIBM Campus" width="100%"/>
+
+<p>
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white"/>
+  <img alt="Express" src="https://img.shields.io/badge/Express.js-Framework-000000?logo=express&logoColor=white"/>
+  <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white"/>
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?logo=javascript&logoColor=black"/>
+  <img alt="Status" src="https://img.shields.io/badge/type-academic%20project-a78bfa"/>
+</p>
+
+</div>
+
 # Event-Management-System-NIBM-Campus
 
 ## Event Management System – NIBM Campus
@@ -94,33 +108,9 @@ Different user roles provide access to different system functionalities.
 
 ## System Workflow
 
-```text
-                    Event Management System
-                              │
-             ┌────────────────┴────────────────┐
-             │                                 │
-             ▼                                 ▼
-      Student User                       Administrator
-             │                                 │
-             ▼                                 ▼
-         Login/Register                     Login
-             │                                 │
-             ▼                                 ▼
-       View Events                     Manage Events
-             │                                 │
-             ▼                                 ▼
-      Event Details                   Manage Information
-             │                                 │
-             ▼                                 ▼
-      Register for Event              Monitor Registrations
-             │                                 │
-             └────────────────┬────────────────┘
-                              ▼
-                       MongoDB Atlas
-                              │
-                              ▼
-                         Stored Data
-```
+<p align="center">
+  <img src="assets/event-workflow.svg" alt="System workflow for students and administrators" width="100%"/>
+</p>
 
 ---
 
@@ -128,36 +118,9 @@ Different user roles provide access to different system functionalities.
 
 The project follows a basic full-stack architecture where the frontend communicates with the backend server, while the backend handles application logic and database operations.
 
-```text
-┌──────────────────────────┐
-│          Users           │
-│                          │
-│  Students / Admins       │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│      Web Interface       │
-│                          │
-│ HTML / CSS / JavaScript  │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│      Express.js          │
-│       Backend            │
-│                          │
-│ Routes / Logic / APIs    │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│       MongoDB Atlas      │
-│                          │
-│ Users / Events /         │
-│ Registration Data        │
-└──────────────────────────┘
-```
+<p align="center">
+  <img src="assets/event-architecture.svg" alt="Application architecture" width="100%"/>
+</p>
 
 ---
 
@@ -304,39 +267,9 @@ For demonstration purposes, sample user credentials are shown in the project dem
 
 The project followed a full-stack development workflow:
 
-```text
-Problem Identification
-        │
-        ▼
-System Requirements
-        │
-        ▼
-UI Design
-        │
-        ▼
-Frontend Development
-        │
-        ▼
-Backend Development
-        │
-        ▼
-MongoDB Database Integration
-        │
-        ▼
-Authentication & User Roles
-        │
-        ▼
-Event Management
-        │
-        ▼
-Event Registration
-        │
-        ▼
-Testing & Debugging
-        │
-        ▼
-Final Web Application
-```
+<p align="center">
+  <img src="assets/event-dev-process.svg" alt="Project development process" width="100%"/>
+</p>
 
 ---
 
@@ -374,6 +307,8 @@ The exact structure may vary depending on the final version of the repository. A
 
 ```text
 Event-Management-System-NIBM-Campus/
+│
+├── assets/              # README animations
 │
 ├── public/
 │   ├── css/
