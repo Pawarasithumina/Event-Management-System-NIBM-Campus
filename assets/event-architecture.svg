@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="900" height="310" role="img" aria-label="Application architecture: users, web interface, Express.js backend, MongoDB Atlas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; }
+      .box { fill: #172033; stroke: #475569; stroke-width: 2; animation: lit 12s infinite; }
+      .a1{animation-delay:0s}.a2{animation-delay:1.5s}.a3{animation-delay:3s}.a4{animation-delay:4.5s}
+      .h { fill: #e2e8f0; font-size: 16px; font-weight: 700; }
+      .s { fill: #94a3b8; font-size: 12.5px; }
+      .fwd { stroke: #60a5fa; stroke-width: 3; stroke-dasharray: 7 7; fill: none; animation: dashf 1s linear infinite; }
+      .back { stroke: #34d399; stroke-width: 3; stroke-dasharray: 7 7; fill: none; animation: dashb 1s linear infinite; }
+      @keyframes dashf { to { stroke-dashoffset: -14; } }
+      @keyframes dashb { to { stroke-dashoffset: 14; } }
+      @keyframes lit {
+        0%      { stroke: #a78bfa; fill: #26204f; }
+        12%     { stroke: #a78bfa; fill: #26204f; }
+        16%,100%{ stroke: #475569; fill: #172033; }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="310" rx="18" fill="url(#bg)"/>
+
+  <!-- arrows: request (forward) and response (back) -->
+  <path class="fwd"  d="M197 125 H252"/>
+  <path class="fwd"  d="M422 125 H477"/>
+  <path class="fwd"  d="M647 125 H702"/>
+  <path class="back" d="M252 170 H197"/>
+  <path class="back" d="M477 170 H422"/>
+  <path class="back" d="M702 170 H647"/>
+
+  <!-- boxes -->
+  <rect class="box a1" x="27"  y="70" width="170" height="150" rx="16"/>
+  <rect class="box a2" x="252" y="70" width="170" height="150" rx="16"/>
+  <rect class="box a3" x="477" y="70" width="170" height="150" rx="16"/>
+  <rect class="box a4" x="702" y="70" width="170" height="150" rx="16"/>
+
+  <text class="h" x="112" y="132">Users</text>
+  <text class="s" x="112" y="156">Students</text>
+  <text class="s" x="112" y="174">Administrators</text>
+
+  <text class="h" x="337" y="132">Web Interface</text>
+  <text class="s" x="337" y="156">HTML · CSS</text>
+  <text class="s" x="337" y="174">JavaScript</text>
+
+  <text class="h" x="562" y="132">Express.js Backend</text>
+  <text class="s" x="562" y="156">Routes · Logic</text>
+  <text class="s" x="562" y="174">APIs</text>
+
+  <text class="h" x="787" y="132">MongoDB Atlas</text>
+  <text class="s" x="787" y="156">Users · Events</text>
+  <text class="s" x="787" y="174">Registrations</text>
+
+  <!-- request packet out, response packet back -->
+  <circle r="7" fill="#fde68a">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M112 125 H787" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.47;0.5;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="7" fill="#6ee7b7">
+    <animateMotion dur="12s" repeatCount="indefinite" path="M787 170 H112" keyPoints="0;0;1" keyTimes="0;0.5;1" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.53;0.97;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- legend -->
+  <circle cx="340" cy="268" r="6" fill="#fde68a"/>
+  <text class="s" x="395" y="272">request</text>
+  <circle cx="470" cy="268" r="6" fill="#6ee7b7"/>
+  <text class="s" x="530" y="272">response</text>
+</svg>

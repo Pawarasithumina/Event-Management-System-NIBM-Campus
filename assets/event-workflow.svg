@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" aria-label="System workflow: student and administrator paths into MongoDB Atlas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; }
+      .node { fill: #172033; stroke: #475569; stroke-width: 2; animation: lit 16s infinite; }
+      .st1{animation-delay:0s}.st2{animation-delay:2s}.st3{animation-delay:4s}.st4{animation-delay:6s}
+      .ad1{animation-delay:8s}.ad2{animation-delay:10s}.ad3{animation-delay:12s}.ad4{animation-delay:14s}
+      .l { fill: #e2e8f0; font-size: 15px; font-weight: 600; }
+      .lane { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-anchor: start; }
+      .flowS { stroke: #60a5fa; stroke-width: 3; stroke-dasharray: 7 7; fill: none; animation: dash 1s linear infinite; }
+      .flowA { stroke: #a78bfa; stroke-width: 3; stroke-dasharray: 7 7; fill: none; animation: dash 1s linear infinite; }
+      .db { fill: #172033; stroke: #34d399; stroke-width: 2.5; animation: dbpulse 4s ease-in-out infinite; }
+      @keyframes dash { to { stroke-dashoffset: -14; } }
+      @keyframes dbpulse { 0%,100% { fill: #172033; } 50% { fill: #0f3a35; } }
+      @keyframes lit {
+        0%      { stroke: #fde68a; fill: #2b2a4f; }
+        11%     { stroke: #fde68a; fill: #2b2a4f; }
+        14%,100%{ stroke: #475569; fill: #172033; }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="400" rx="18" fill="url(#bg)"/>
+
+  <!-- lane labels -->
+  <text class="lane" x="30" y="72" fill="#60a5fa">STUDENT</text>
+  <text class="lane" x="30" y="232" fill="#a78bfa">ADMINISTRATOR</text>
+
+  <!-- connectors: student -->
+  <path class="flowS" d="M185 125 H215"/>
+  <path class="flowS" d="M370 125 H400"/>
+  <path class="flowS" d="M555 125 H585"/>
+  <path class="flowS" d="M740 125 H775"/>
+  <!-- connectors: admin -->
+  <path class="flowA" d="M185 285 H215"/>
+  <path class="flowA" d="M370 285 H400"/>
+  <path class="flowA" d="M555 285 H585"/>
+  <path class="flowA" d="M740 285 H775"/>
+
+  <!-- student lane -->
+  <rect class="node st1" x="30"  y="90" width="155" height="70" rx="14"/>
+  <rect class="node st2" x="215" y="90" width="155" height="70" rx="14"/>
+  <rect class="node st3" x="400" y="90" width="155" height="70" rx="14"/>
+  <rect class="node st4" x="585" y="90" width="155" height="70" rx="14"/>
+  <text class="l" x="107"  y="120">Login /</text><text class="l" x="107"  y="140">Register</text>
+  <text class="l" x="292"  y="120">View</text><text class="l" x="292"  y="140">Events</text>
+  <text class="l" x="477"  y="120">Event</text><text class="l" x="477"  y="140">Details</text>
+  <text class="l" x="662"  y="120">Register for</text><text class="l" x="662" y="140">Event</text>
+
+  <!-- admin lane -->
+  <rect class="node ad1" x="30"  y="250" width="155" height="70" rx="14"/>
+  <rect class="node ad2" x="215" y="250" width="155" height="70" rx="14"/>
+  <rect class="node ad3" x="400" y="250" width="155" height="70" rx="14"/>
+  <rect class="node ad4" x="585" y="250" width="155" height="70" rx="14"/>
+  <text class="l" x="107"  y="290">Login</text>
+  <text class="l" x="292"  y="280">Manage</text><text class="l" x="292"  y="300">Events</text>
+  <text class="l" x="477"  y="280">Manage</text><text class="l" x="477"  y="300">Information</text>
+  <text class="l" x="662"  y="280">Monitor</text><text class="l" x="662" y="300">Registrations</text>
+
+  <!-- database -->
+  <rect class="db" x="775" y="90" width="100" height="230" rx="18"/>
+  <ellipse cx="825" cy="112" rx="40" ry="10" fill="none" stroke="#34d399" stroke-width="2"/>
+  <text class="l" x="825" y="190" fill="#6ee7b7">MongoDB</text>
+  <text class="l" x="825" y="210" fill="#6ee7b7">Atlas</text>
+  <text x="825" y="236" font-size="12" fill="#94a3b8">Stored Data</text>
+
+  <!-- packets: student first half, admin second half -->
+  <circle r="7" fill="#93c5fd">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M107 125 H775" keyPoints="0;1;1" keyTimes="0;0.5;1" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.48;0.5;1" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="7" fill="#c4b5fd">
+    <animateMotion dur="16s" repeatCount="indefinite" path="M107 285 H775" keyPoints="0;0;1" keyTimes="0;0.5;1" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.52;0.98;1" dur="16s" repeatCount="indefinite"/>
+  </circle>
+</svg>

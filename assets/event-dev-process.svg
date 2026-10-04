@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" role="img" aria-label="Project development process from problem identification to final web application">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; }
+      .node { fill: #172033; stroke: #475569; stroke-width: 2; animation: lit 22s infinite; }
+      .final { stroke: #34d399; }
+      .n1{animation-delay:0s}.n2{animation-delay:2s}.n3{animation-delay:4s}.n4{animation-delay:6s}.n5{animation-delay:8s}.n6{animation-delay:10s}
+      .n7{animation-delay:12s}.n8{animation-delay:14s}.n9{animation-delay:16s}.n10{animation-delay:18s}.n11{animation-delay:20s}
+      .num { fill: #a78bfa; font-size: 11px; font-weight: 700; }
+      .l { fill: #e2e8f0; font-size: 13px; font-weight: 600; }
+      .flow { stroke: url(#line); stroke-width: 3; stroke-dasharray: 5 5; fill: none; animation: dash 1s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset: -10; } }
+      @keyframes lit {
+        0%      { stroke: #fde68a; fill: #2b2a4f; }
+        8%      { stroke: #fde68a; fill: #2b2a4f; }
+        10%,100%{ stroke: #475569; fill: #172033; }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="320" rx="18" fill="url(#bg)"/>
+
+  <!-- connectors row 1 -->
+  <path class="flow" d="M145 78 H167"/><path class="flow" d="M292 78 H314"/><path class="flow" d="M439 78 H461"/>
+  <path class="flow" d="M586 78 H608"/><path class="flow" d="M733 78 H755"/>
+  <!-- turn down -->
+  <path class="flow" d="M817 116 V190"/>
+  <!-- connectors row 2 (right to left) -->
+  <path class="flow" d="M755 228 H733"/><path class="flow" d="M608 228 H586"/>
+  <path class="flow" d="M461 228 H439"/><path class="flow" d="M314 228 H292"/>
+
+  <!-- row 1 -->
+  <rect class="node n1" x="20"  y="40" width="125" height="76" rx="12"/>
+  <rect class="node n2" x="167" y="40" width="125" height="76" rx="12"/>
+  <rect class="node n3" x="314" y="40" width="125" height="76" rx="12"/>
+  <rect class="node n4" x="461" y="40" width="125" height="76" rx="12"/>
+  <rect class="node n5" x="608" y="40" width="125" height="76" rx="12"/>
+  <rect class="node n6" x="755" y="40" width="125" height="76" rx="12"/>
+
+  <text class="num" x="82"  y="60">01</text><text class="l" x="82"  y="82">Problem</text><text class="l" x="82"  y="100">Identification</text>
+  <text class="num" x="229" y="60">02</text><text class="l" x="229" y="82">System</text><text class="l" x="229" y="100">Requirements</text>
+  <text class="num" x="376" y="60">03</text><text class="l" x="376" y="82">UI</text><text class="l" x="376" y="100">Design</text>
+  <text class="num" x="523" y="60">04</text><text class="l" x="523" y="82">Frontend</text><text class="l" x="523" y="100">Development</text>
+  <text class="num" x="670" y="60">05</text><text class="l" x="670" y="82">Backend</text><text class="l" x="670" y="100">Development</text>
+  <text class="num" x="817" y="60">06</text><text class="l" x="817" y="82">MongoDB</text><text class="l" x="817" y="100">Integration</text>
+
+  <!-- row 2 -->
+  <rect class="node n7"  x="755" y="190" width="125" height="76" rx="12"/>
+  <rect class="node n8"  x="608" y="190" width="125" height="76" rx="12"/>
+  <rect class="node n9"  x="461" y="190" width="125" height="76" rx="12"/>
+  <rect class="node n10" x="314" y="190" width="125" height="76" rx="12"/>
+  <rect class="node n11 final" x="167" y="190" width="125" height="76" rx="12"/>
+
+  <text class="num" x="817" y="210">07</text><text class="l" x="817" y="232">Authentication</text><text class="l" x="817" y="250">&amp; User Roles</text>
+  <text class="num" x="670" y="210">08</text><text class="l" x="670" y="232">Event</text><text class="l" x="670" y="250">Management</text>
+  <text class="num" x="523" y="210">09</text><text class="l" x="523" y="232">Event</text><text class="l" x="523" y="250">Registration</text>
+  <text class="num" x="376" y="210">10</text><text class="l" x="376" y="232">Testing &amp;</text><text class="l" x="376" y="250">Debugging</text>
+  <text class="num" x="229" y="210">11</text><text class="l" x="229" y="232">Final Web</text><text class="l" x="229" y="250">Application</text>
+
+  <!-- packet -->
+  <circle r="7" fill="#fde68a">
+    <animateMotion dur="22s" repeatCount="indefinite" path="M82 78 H817 V228 H229"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.03;0.97;1" dur="22s" repeatCount="indefinite"/>
+  </circle>
+</svg>
