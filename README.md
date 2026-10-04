@@ -549,3 +549,7 @@ to create a practical solution for a real-world organizational requirement.
 ## Contributors
 
 - [@dhamith99](https://github.com/dhamith99)
+
+### Contribution
+
+This project was developed collaboratively, with contributions to the implementation, documentation, and project development process.
